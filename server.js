@@ -1,11 +1,17 @@
-const express = require('express')
-const app = express()
-const port = 3000
+import express from 'express';
+import { createServer } from 'node:http';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+
+const app = express();
+const server = createServer(app);
+
+const __dirname = dirname(fileURLToPath(import.meta.url))+"/public";
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  res.sendFile(join(__dirname, 'index.html'));
+});
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+server.listen(3000, () => {
+  console.log('server running at http://localhost:3000');
+});
