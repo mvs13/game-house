@@ -1,0 +1,25 @@
+{
+  "name": "game-house",
+  "version": "1.0.0",
+  "description": "A project to explore the possibilities socket.io using the example of simple games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mvs13/game-house.git"
+  },
+  "author": "Max V. Shumakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvs13/game-house/issues"
+  },
+  "homepage": "https://github.com/mvs13/game-house#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
