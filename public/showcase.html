@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GH - Showcase</title>
+    <script defer src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script defer src="./js/showcase.js"></script>
+    <!-- <link rel="stylesheet" href="/css/fontawesome/css/fontawesome.min.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/fontawesome/css/solid.min.css" /> -->
+    <style>
+      @import "/css/bulma/bulma.min.css";
+      @import "/css/fontawesome/css/all.min.css";
+    </style>
+  </head>
+  <body>
+    <main class="container is-justify-content-center">
+      <h1>Showcase for Socket.IO</h1>
+      <p>
+        Socket.IO is a library that enables real-time, bidirectional and
+        event-based communication between the browser and the server.
+      </p>
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Connect, send and recive</p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="far fa-comments"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <ul id="messages"></ul>
+          <form id="form" action="">
+            <div class="field is-grouped">
+              <button id="inchat-btn" class="button">
+                <span class="icon">
+                  <i class="fas fa-sign-in-alt"></i>
+                </span>
+                <span>In chat</span>
+              </button>
+              <button id="outchat-btn" class="button">
+                <span class="icon">
+                  <i class="fas fa-sign-out-alt"></i>
+                </span>
+                <span>Out chat</span>
+              </button>
+              <p class="control is-expanded">
+                <input
+                  id="input"
+                  autocomplete="off"
+                  class="input"
+                  type="text"
+                  placeholder="type message..."
+                />
+              </p>
+              <p class="control">
+                <button id="sendmsg-btn" class="button is-info">
+                  <span class="icon">
+                    <i class="fas fa-comment-dots"></i>
+                  </span>
+                  <span>Send</span>
+                </button>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="container is-justify-content-center">
+      <p>Copyright &copy; 2024</p>
+    </footer>
+  </body>
+</html>
